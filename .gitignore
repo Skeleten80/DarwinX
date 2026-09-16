@@ -1,0 +1,27 @@
+# Upstream source working trees
+external/src/
+external/cache/
+
+# Build outputs
+BUILD/
+build/
+out/
+derived/
+*.dSYM/
+
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+logs/
+
+# Local environment
+.env
+.env.*
+!.env.example
