@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "baseline": "macOS-26.0",
+  "purpose": "DarwinX Milestone 0 reproducible XNU baseline",
+  "distribution": {
+    "repository": "https://github.com/apple-oss-distributions/distribution-macOS.git",
+    "commit": "4e290a9b9d3723c65d2a606223d41eb90ecdbf99",
+    "release": "macOS 26.0"
+  },
+  "kernel": {
+    "repository": "https://github.com/apple-oss-distributions/xnu.git",
+    "tag": "xnu-12377.1.9",
+    "commit": "f6217f891ac0bb64f3d375211650a4c1ff8ca1ea"
+  },
+  "reference_components": {
+    "Libc": "Libc-1725.0.11",
+    "Libsystem": "Libsystem-1356",
+    "dyld": "dyld-1323.3",
+    "libdispatch": "libdispatch-1542.0.4",
+    "objc4": "objc4-950",
+    "IOKitUser": "IOKitUser-100222.0.4",
+    "DiskArbitration": "DiskArbitration-535.0.10",
+    "system_cmds": "system_cmds-1039"
+  },
+  "notes": [
+    "The XNU commit is immutable and is the first component required by Milestone 0.",
+    "Reference component tags come from the same Apple macOS 26.0 release manifest.",
+    "Reference components are not automatically part of the kernel build dependency closure.",
+    "Additional component tags must be resolved to immutable commits before DarwinX consumes them in a reproducible build."
+  ]
+}
