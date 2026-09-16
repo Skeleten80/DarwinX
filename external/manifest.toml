@@ -1,0 +1,84 @@
+# DarwinX upstream source manifest
+#
+# During Milestone 0 these entries are intentionally unpinned until the
+# selected Apple distribution baseline has been validated. Never treat an
+# unpinned entry as a reproducible release dependency.
+
+manifest_version = 1
+
+[[component]]
+name = "xnu"
+repository = "https://github.com/apple-oss-distributions/xnu.git"
+group = "kernel"
+required = true
+revision = "UNPINNED"
+
+[[component]]
+name = "Libc"
+repository = "https://github.com/apple-oss-distributions/Libc.git"
+group = "runtime"
+required = false
+revision = "UNPINNED"
+
+[[component]]
+name = "Libsystem"
+repository = "https://github.com/apple-oss-distributions/Libsystem.git"
+group = "runtime"
+required = false
+revision = "UNPINNED"
+
+[[component]]
+name = "libplatform"
+repository = "https://github.com/apple-oss-distributions/libplatform.git"
+group = "runtime"
+required = false
+revision = "UNPINNED"
+
+[[component]]
+name = "libpthread"
+repository = "https://github.com/apple-oss-distributions/libpthread.git"
+group = "runtime"
+required = false
+revision = "UNPINNED"
+
+[[component]]
+name = "libmalloc"
+repository = "https://github.com/apple-oss-distributions/libmalloc.git"
+group = "runtime"
+required = false
+revision = "UNPINNED"
+
+[[component]]
+name = "dyld"
+repository = "https://github.com/apple-oss-distributions/dyld.git"
+group = "runtime"
+required = false
+revision = "UNPINNED"
+
+[[component]]
+name = "libdispatch"
+repository = "https://github.com/apple-oss-distributions/libdispatch.git"
+group = "runtime"
+required = false
+revision = "UNPINNED"
+
+[[component]]
+name = "launchd"
+repository = "https://github.com/apple-oss-distributions/launchd.git"
+group = "bootstrap"
+required = false
+revision = "UNPINNED"
+
+[[component]]
+name = "IOKitUser"
+repository = "https://github.com/apple-oss-distributions/IOKitUser.git"
+group = "system"
+required = false
+revision = "UNPINNED"
+
+[[component]]
+name = "CoreOSMakefiles"
+repository = "https://github.com/apple-oss-distributions/CoreOSMakefiles.git"
+group = "build"
+required = false
+revision = "UNPINNED"
